@@ -1,0 +1,41 @@
+.boxWrap {
+  width: 400px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.topBar,
+.slideRange{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Progressbar */
+
+.progressBar{
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.progressBar .overlay{
+  background: #00c251;
+  height: 100%;
+  position: absolute;
+  inset: 0px;
+  transition: all ease-in-out 0.3s;
+}
+.progressBar .value{
+  z-index: 99;
+  position: relative;
+}
+.progressBar span.white{
+     color: #fff;
+}
